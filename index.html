@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueSky-Hire</title>
+    <link rel="stylesheet" href=".//CSS/index.css" />
+    <!-- style file for home page -->
+
+    <script src=".//javascript/form-validation.js"></script>
+    <!-- javascript for form validation -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--bootstrap css-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--font awesome-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <!--lora sans serif style-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!--font style for header part-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- script for jquery -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- body animation cdn -->
+  </head>
+  <body>
+    <!-- design of header part -->
+    <header class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg header">
+          <div class="container menu">
+            <a class="navbar-brand col-2" href="index.html"
+              >BlueSky-<span style="color: red">Hire</span></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#nav_toggle"
+            >
+              <span class="fa-solid fa-bars" style="color: #f2f2f2"></span>
+            </button>
+
+            <div class="collapse navbar-collapse nav-option" id="nav_toggle">
+              <ul class="navbar-nav mr-auto">
+                <!-- Home  -->
+                <li class="nav-item active">
+                  <a class="nav-link activey" href="index.html">Home</a>
+                </li>
+
+                <!-- about us \ -->
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+
+                <!-- Reservation -->
+                <li class="nav-item">
+                  <a href="reservation.html" class="nav-link"> Reservation </a>
+                </li>
+
+                <!-- Service -->
+                <li class="nav-item">
+                  <a href="service.html" class="nav-link">Service</a>
+                </li>
+
+                <!-- Blog -->
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+
+                <!-- Contact -->
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- carousel part -->
+    <div class="container-fluid">
+      <div class="row">
+        <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+          <ol>
+            <li
+              data-bs-target="#mycarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></li>
+            <li data-bs-target="#mycarousel" data-bs-slide-to="1"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="./IMAGES/header_background1.jpg"
+                alt="hotel"
+                class="d-block w-100"
+                style="height: 600px"
+              />
+              <div class="carousel-caption">
+                <h2>BlueSky-<span style="color: red">Hire</span></h2>
+                <p style="font-style: italic">
+                  Welcome to BlueSky-Hire, where the open road meets seamless
+                  journeys. Experience the freedom to explore with our diverse
+                  fleet of quality vehicles, exceptional service, and unbeatable
+                  rates. Your adventure begins here, where every mile is a
+                  memory waiting to be made.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src=".//IMAGES/header_background.jpg"
+                alt="hotel"
+                class="d-block w-100"
+                style="height: 600px"
+              />
+              <div class="carousel-caption">
+                <h2>BlueSky-<span style="color: red">Hire</span></h2>
+                <p style="font-style: italic">
+                  Welcome to BlueSky-Hire, where the open road meets seamless
+                  journeys. Experience the freedom to explore with our diverse
+                  fleet of quality vehicles, exceptional service, and unbeatable
+                  rates. Your adventure begins here, where every mile is a
+                  memory waiting to be made.
+                </p>
+              </div>
+            </div>
+
+            <!-- <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon color"></span>
+                    </a>
+
+                    <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon color"></span>
+                    </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- booking part and guid to book -->
+    <section class="rent-form">
+      <div class="container">
+        <div class="row">
+          <!-- booking part -->
+          <div class="col-lg-4">
+            <form
+              method="post"
+              name="rent"
+              onsubmit="return rent_validation();"
+              id="animate1"
+            >
+              <h3>Make Your Trip</h3>
+              <label for="name">Enter Name: </label>
+              <input
+                type="text"
+                id="name"
+                name="f_name"
+                placeholder="Enter name"
+              />
+
+              <label for="pickup" class="pt-3">Enter Pickup Location: </label>
+              <input
+                type="text"
+                id="pickup"
+                placeholder="City, Station, Locality, etc."
+              />
+
+              <label for="drop" class="pt-3">Enter Drop Location: </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="City, Station, Locality, etc."
+              />
+
+              <label for="pick-date" class="pt-3">Enter Pickup Date: </label>
+              <input type="date" id="date" />
+
+              <label for="pick-time" class="pt-3">Enter Pickup Time: </label>
+              <input type="time" id="date" />
+
+              <button class="btn p-2 btn-danger">Rent</button>
+            </form>
+          </div>
+
+          <!-- guide to book -->
+          <div class="col-lg-8 guide">
+            <h2 class="text-capitalize text-white">
+              best way to rent a car on your finger tips
+            </h2>
+            <!-- guide details -->
+            <div class="row text-center guide-detail">
+              <div class="col-sm-4">
+                <i
+                  class="fa-solid fa-location-dot pt-5"
+                  style="color: #ffffff"
+                ></i>
+                <p class="text-center">Chose Your Pickup Location</p>
+              </div>
+
+              <div class="col-sm-4">
+                <i
+                  class="fa-solid fa-handshake pt-5"
+                  style="color: #ffffff"
+                ></i>
+                <p class="text-center">Select The Best Deal You Want</p>
+              </div>
+
+              <div class="col-sm-4">
+                <i class="fa-solid fa-car pt-5" style="color: #ffffff"></i>
+                <p class="text-center">Rent Your Car, Ride And Enjoy</p>
+              </div>
+            </div>
+
+            <p class="text-white pt-4">
+              Experience effortless convenience with our streamlined car rental
+              service, designed for easy accessibility and a straightforward
+              renting procedure.Enjoy the freedom of the road with our seamless
+              car rental experience – where getting behind the wheel is as easy
+              as it should be.
+              <a
+                href="reservation.html"
+                class="text-decoration-none text-danger"
+                >know more......</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- car section for mobile device -->
+    <section class="car_mobile">
+      <div class="container">
+        <div class="row text-center">
+          <h4
+            class="text-uppercase text-center text-danger"
+            style="font-size: 15px"
+          >
+            What we offer
+          </h4>
+          <h2 class="text-uppercase text-center text-white">
+            our featured vehicles
+          </h2>
+          <table class="text-white table-dark table-hover table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Brand</th>
+                <th>Pricing</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th style="vertical-align: middle">Family Car</th>
+                <td>Fortuner, Endeavour, Kia , Mahindra, TATA.....</td>
+                <td style="vertical-align: middle">
+                  <a href="pricing.html" class="btn btn-danger" role="button">
+                    Click
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <th style="vertical-align: middle">Premium Car</th>
+                <td>Mercedes-Benz, BMW, Audi, Lexus, Jaguar.....</td>
+                <td style="vertical-align: middle">
+                  <button type="button" class="btn btn-danger">Click</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th style="vertical-align: middle">Transportation</th>
+                <td>Taxi, Truck, Trolly's, Heavy Duty Truck, Buses.....</td>
+                <td style="vertical-align: middle">
+                  <button type="button" class="btn btn-danger">Click</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th style="vertical-align: middle">Sports Car</th>
+                <td>Lamborghini, Mustang, Porsche, Bugatti, Pagani.....</td>
+                <td style="vertical-align: middle">
+                  <button type="button" class="btn btn-danger">Click</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured vehicles -->
+    <section class="featured">
+      <div class="container">
+        <h4
+          class="text-uppercase text-center text-danger"
+          style="font-size: 15px"
+        >
+          What we offer
+        </h4>
+        <h2 class="text-uppercase text-center text-white">
+          our featured vehicles
+        </h2>
+
+        <div class="row">
+          <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <div class="row">
+                  <!-- first car -->
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                    <div class="card text-center card1">
+                      <img
+                        src=".//IMAGES/range rover.webp"
+                        class="card-img-top"
+                        style="height: 200px"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Range Rover Velar</h4>
+                        <p class="card-text">
+                          Discover luxury on wheels with the Range Rover Velar
+                          rental. A fusion of sleek design and cutting-edge
+                          technology, this SUV ensures a refined and powerful
+                          driving experience.
+                        </p>
+
+                        <button
+                          class="btn btn-danger"
+                          role="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- second car -->
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                    <div class="card text-center card1">
+                      <img
+                        src=".//IMAGES/corsa.jpg"
+                        class="card-img-top"
+                        style="height: 200px"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Opel Corsa</h4>
+                        <p class="card-text">
+                          Opel Carosa, a stylish and compact choice for urban
+                          exploration. With its modern design and efficient
+                          performance, this car seamlessly blends practicality
+                          and aesthetics
+                        </p>
+
+                        <button
+                          class="btn btn-danger"
+                          role="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- third car -->
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                    <div class="card text-center card1">
+                      <img
+                        src=".//IMAGES/creta.webp"
+                        class="card-img-top"
+                        style="height: 200px"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Hyundai Creta</h4>
+                        <p class="card-text">
+                          The Hyundai Creta, a dynamic SUV that redefines urban
+                          driving. With its bold design and advanced features,
+                          the Creta offers a perfect blend of style and
+                          functionality.
+                        </p>
+
+                        <button
+                          class="btn btn-danger"
+                          role="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- fourth car -->
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                    <div class="card text-center card1">
+                      <img
+                        src=".//IMAGES/mercedes.webp"
+                        class="card-img-top"
+                        style="height: 200px"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Mercedes-Benz</h4>
+                        <p class="card-text">
+                          A symbol of Luxury, Mercedes-Benz delivers a driving
+                          experience that transcends expectations, combining
+                          power, elegance, and innovation for those who seek to
+                          accelerate it.
+                        </p>
+
+                        <button
+                          class="btn btn-danger"
+                          role="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row">
+                  <!-- first car -->
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                    <div class="card text-center card1">
+                      <img
+                        src=".//IMAGES/scorpio.webp"
+                        class="card-img-top"
+                        style="height: 200px"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Mahindra Scorpio</h4>
+                        <p class="card-text">
+                          The Mahindra Scorpio, a rugged and powerful SUV
+                          designed for adventure with a bold exterior, interior,
+                          and features. Conquer any terrain with its robust
+                          build and reliable performance.
+                        </p>
+
+                        <button
+                          class="btn btn-danger"
+                          role="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- second car -->
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                    <div class="card text-center card1">
+                      <img
+                        src=".//IMAGES/suzuki.webp"
+                        class="card-img-top"
+                        style="height: 200px"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Fronx</h4>
+                        <p class="card-text">
+                          Fronx, a brand with reliability and innovation. From
+                          compact cars to agile motorcycles, Suzuki consistently
+                          delivers vehicles that combine efficiency, style, and
+                          performance.
+                        </p>
+
+                        <button
+                          class="btn btn-danger"
+                          role="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- third car -->
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                    <div class="card text-center card1">
+                      <img
+                        src=".//IMAGES/swift.webp"
+                        class="card-img-top"
+                        style="height: 200px"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Swift</h4>
+                        <p class="card-text">
+                          With a sporty design and handling, the Swift offers a
+                          thrilling driving experience.The well-crafted interior
+                          boasts modern features, creating a perfect comfort and
+                          excitement.
+                        </p>
+
+                        <button
+                          class="btn btn-danger"
+                          role="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- fourth car -->
+                  <div class="col-lg-3 col-sm-6 mt-3">
+                    <div class="card text-center card1">
+                      <img
+                        src=".//IMAGES/jaguar.jpg"
+                        class="card-img-top"
+                        style="height: 200px"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Jaguar</h4>
+                        <p class="card-text">
+                          Jaguar, the embodiment of British luxury and
+                          performance. Crafted with precision and elegance,
+                          Jaguar vehicles epitomize automotive excellence.
+                        </p>
+
+                        <button
+                          class="btn btn-danger"
+                          role="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section -->
+    <section class="service">
+      <div class="container">
+        <div class="container">
+          <h4
+            class="text-uppercase text-center text-danger"
+            style="font-size: 15px"
+          >
+            Our Services
+          </h4>
+          <h2 class="text-uppercase text-center text-white">
+            Our Latest Services
+          </h2>
+          <div class="row">
+            <!-- first service -->
+            <div class="col-md-4 mt-3" id="animate2">
+              <div class="card text-center">
+                <div
+                  class="card-header justify-content-center align-content-center"
+                >
+                  <i
+                    class="fa-solid fa-warehouse mt-3"
+                    style="
+                      color: red;
+                      font-size: 40px;
+                      background: white;
+                      width: 110px;
+                      height: 110px;
+                      padding: 30px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Garage</h4>
+                  <p class="card-text">
+                    Our skilled technicians provide expert diagnostics,
+                    efficient repairs, and proactive maintenance. Trust us to
+                    keep your vehicle running smoothly. Your satisfaction is our
+                    priority.
+                  </p>
+
+                  <button
+                    class="btn btn-danger"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#service_modal"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- second service -->
+            <div class="col-md-4 mt-3">
+              <div class="card text-center">
+                <div
+                  class="card-header justify-content-center align-content-center"
+                >
+                  <i
+                    class="fa-solid fa-van-shuttle mt-3"
+                    style="
+                      color: red;
+                      font-size: 40px;
+                      background: white;
+                      width: 110px;
+                      height: 110px;
+                      padding: 30px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Shuttle</h4>
+                  <p class="card-text">
+                    Our punctual drivers and well-maintained vehicles ensure a
+                    comfortable journey. Count on us for prompt and safe
+                    transportation, making your travels hassle-free and
+                    enjoyable.
+                  </p>
+
+                  <button
+                    class="btn btn-danger"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#travel"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- third review -->
+            <div class="col-md-4 mt-3" id="animate3">
+              <div class="card text-center">
+                <div
+                  class="card-header justify-content-center align-content-center"
+                >
+                  <i
+                    class="fa-solid fa-location-dot mt-3"
+                    style="
+                      color: red;
+                      font-size: 40px;
+                      background: white;
+                      width: 110px;
+                      height: 110px;
+                      padding: 30px;
+                      border-radius: 50%;
+                    "
+                  ></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Intercity Commute</h4>
+                  <p class="card-text">
+                    Relax in comfort as we provide seamless and reliable
+                    transportation between cities. Enjoy a stress-free journey
+                    with our professional drivers and well-equipped vehicles.
+                  </p>
+
+                  <button
+                    class="btn btn-danger"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#travel"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section -->
+    <section class="review">
+      <div class="container">
+        <h4
+          class="text-uppercase text-center text-danger"
+          style="font-size: 15px"
+        >
+          testimonials
+        </h4>
+        <h2 class="text-uppercase text-center text-white">
+          What our customer says?
+        </h2>
+        <div class="row">
+          <div id="carousel" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner t-review mt-5">
+              <div
+                class="carousel-item active text-white"
+                data-bs-interval="3000"
+              >
+                <p>
+                  Exceptional car rental experience! The vehicle was clean,
+                  well-maintained, and ready to roll. The staff was friendly,
+                  efficient, and made the entire process seamless. A reliable
+                  choice for hassle-free travel. Highly recommended! The car was
+                  spotless and performed impeccably throughout the rental
+                  period. The return process was quick, and the team's
+                  professionalism stood out. Swift Rentals has earned my trust,
+                  and I'll definitely be choosing them for my future car rental
+                  needs.
+                </p>
+
+                <p style="margin-bottom: 20px" class="text-center">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i> -
+                  <strong>Harsh</strong>
+                </p>
+              </div>
+
+              <div class="carousel-item text-white" data-bs-interval="3000">
+                <p>
+                  Exceptional car rental experience! The vehicle was clean,
+                  well-maintained, and ready to roll. The staff was friendly,
+                  efficient, and made the entire process seamless. A reliable
+                  choice for hassle-free travel. Highly recommended! The car was
+                  spotless and performed impeccably throughout the rental
+                  period. The return process was quick, and the team's
+                  professionalism stood out. Swift Rentals has earned my trust,
+                  and I'll definitely be choosing them for my future car rental
+                  needs.
+                </p>
+
+                <p style="margin-bottom: 20px" class="text-center">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star-half" style="color: #ffd43b"></i> -
+                  <strong>Amit</strong>
+                </p>
+              </div>
+
+              <div class="carousel-item text-white" data-bs-interval="3000">
+                <p>
+                  Exceptional car rental experience! The vehicle was clean,
+                  well-maintained, and ready to roll. The staff was friendly,
+                  efficient, and made the entire process seamless. A reliable
+                  choice for hassle-free travel. Highly recommended! The car was
+                  spotless and performed impeccably throughout the rental
+                  period. The return process was quick, and the team's
+                  professionalism stood out. Swift Rentals has earned my trust,
+                  and I'll definitely be choosing them for my future car rental
+                  needs.
+                </p>
+
+                <p style="margin-bottom: 20px" class="text-center">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i> -
+                  <strong>Pratham</strong>
+                </p>
+              </div>
+
+              <a
+                href="#carousel"
+                class="carousel-control-prev"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon color"></span>
+              </a>
+
+              <a
+                href="#carousel"
+                class="carousel-control-next"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon color"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section -->
+    <section class="blogging">
+      <div class="container blogging-detail">
+        <h4
+          class="text-uppercase text-center text-danger"
+          style="font-size: 15px"
+        >
+          Blog
+        </h4>
+        <h2 class="text-uppercase text-center text-white">our recent blogs</h2>
+        <div class="row">
+          <div class="col-md-4 mt-3" id="animate4">
+            <div class="card text-center" style="border: none">
+              <img
+                src=".//IMAGES/blog1.jpg"
+                class="card-img-top"
+                style="height: 200px !important"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-danger">
+                  Things to know before getting a rental car
+                </h4>
+                <p class="card-text">
+                  Embark on a seamless journey with our car rental services.
+                  Explore the freedom of choice with our diverse fleet, from
+                  sleek sedans to spacious SUVs. Enjoy top-notch customer
+                  service, competitive rates, and well-maintained vehicles for
+                  an unforgettable travel experience.
+                </p>
+
+                <a class="btn btn-danger" type="button" href="blog.html">
+                  View More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3" id="animate5">
+            <div class="card text-center" style="border: none">
+              <img
+                src=".//IMAGES/blog2.jpg"
+                class="card-img-top"
+                style="height: 200px"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-danger">
+                  What are good and bad side of a sports car
+                </h4>
+                <p class="card-text">
+                  Unlock the keys to convenience with our car rental blog.
+                  Discover insider tips, latest vehicle trends, and travel
+                  hacks. From city escapes to road trip essentials, we've got
+                  your journey covered. Drive into a world of possibilities –
+                  where every mile is an adventure which start here!
+                </p>
+
+                <a class="btn btn-danger" type="button" href="blog.html">
+                  View More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-3" id="animate6">
+            <div class="card text-center" style="border: none">
+              <img
+                src=".//IMAGES/blog3.gif"
+                class="card-img-top"
+                style="height: 200px"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-danger">
+                  Exclusive advantage of service
+                </h4>
+                <p class="card-text">
+                  Dive into our car rental blog for a road map to stress-free
+                  travel. Whether you're a seasoned traveler or a first-timer,
+                  find valuable insights, destination highlights, and expert
+                  advice. Your ultimate guide to hitting the road with
+                  confidence and style starts here!
+                </p>
+
+                <a class="btn btn-danger" type="button" href="blog.html">
+                  View More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 f1">
+            <h4>BlueSky-<span style="color: red">Hire</span></h4>
+            <p>
+              We inspire and reach millions of customers across 90 local
+              websites
+            </p>
+            <p>
+              <a
+                href="https://www.facebook.com/pannucarrental/ "
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff"></i>
+              </a>
+              <a href="https://twitter.com/savaaricars?lang=en" target="_blank">
+                <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/revv_india/?hl=en"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+              </a>
+              <a href="https://www.youtube.com/@Dayakaranvlogs" target="_blank">
+                <i class="fa-brands fa-youtube" style="color: #ffffff"></i>
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-4 f2">
+            <h6>contact us</h6>
+
+            <p>
+              Ph.no: 11 584859323 <br />
+              Mobile no.:+91 9345564234 <br />
+              Address: d23, Shakti Vihar, New Delhi <br />
+              India
+            </p>
+          </div>
+          <div class="col-lg-4 f3">
+            <h6>new latest</h6>
+
+            <p>Get the latest update and offers.</p>
+            <input type="email" placeholder="enter email" />
+            <button type="button" class="btn">
+              <i class="fa-solid fa-paper-plane" style="color: #e2e5e9"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- declaration part for website -->
+    <section class="footer-declare">
+      <div class="container declare-text">
+        <div class="row mt-3 text-center">
+          <p>
+            Copyright ©2024 All rights reserved |
+            <a
+              href="#"
+              style="text-decoration: none; color: white"
+              data-bs-toggle="modal"
+              data-bs-target="#terms_and_policy"
+              >Terms of Use</a
+            >
+            |
+            <a
+              href="#"
+              style="text-decoration: none; color: white"
+              data-bs-toggle="modal"
+              data-bs-target="#terms_and_policy"
+              >Policy</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal design for booking -->
+    <div
+      class="modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form method="post" name="rent" onsubmit="return rent_validation();">
+            <div class="modal-header">
+              <h3>Make Your Trip</h3>
+              <span
+                class="fa-solid fa-xmark"
+                data-bs-dismiss="modal"
+                style="color: #f2f2f2; font-size: 30px; cursor: pointer"
+              ></span>
+            </div>
+
+            <label for="name" class="pt-3">Enter Name: </label>
+            <input
+              type="text"
+              id="name"
+              name="f_name"
+              placeholder="Enter name"
+            />
+
+            <label for="pickup" class="pt-3">Enter Pickup Location: </label>
+            <input
+              type="text"
+              id="pickup"
+              placeholder="City, Station, Locality, etc."
+            />
+
+            <label for="drop" class="pt-3">Enter Drop Location: </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="City, Station, Locality, etc."
+            />
+
+            <label for="pick-date" class="pt-3">Enter Pickup Date: </label>
+            <input type="date" id="date" />
+
+            <label for="pick-time" class="pt-3">Enter Pickup Time: </label>
+            <input type="time" id="date" />
+
+            <button class="btn p-2 btn-danger">Rent</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal design for service part(garage) -->
+    <div
+      class="modal"
+      id="service_modal"
+      tabindex="-1"
+      aria-labelledby="service_modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form method="post" name="rent" onsubmit="return rent_validation();">
+            <div class="modal-header">
+              <h3>Garage Service</h3>
+              <span
+                class="fa-solid fa-xmark"
+                data-bs-dismiss="modal"
+                style="color: #f2f2f2; font-size: 30px; cursor: pointer"
+              ></span>
+            </div>
+
+            <label for="name" class="pt-3">Enter Name: </label>
+            <input
+              type="text"
+              id="name"
+              name="f_name"
+              placeholder="Enter name"
+            />
+
+            <label for="pickup" class="pt-3">Enter Contact Number: </label>
+            <input
+              type="text"
+              id="pickup"
+              placeholder="Enter your mobile number"
+            />
+
+            <label for="drop" class="pt-3">Select Service Type: </label>
+            <select name="service" id="service">
+              <option value="">Select service</option>
+              <option value="engine">Engine Related</option>
+              <option value="oil">Oil Change</option>
+              <option value="break">Break Related</option>
+              <option value="paint">Paint Change</option>
+              <option value="service">Complete Service</option>
+            </select>
+
+            <label for="pick-date" class="pt-3">Enter Pickup Date: </label>
+            <input type="date" id="date" />
+
+            <label for="pick-time" class="pt-3">Enter Pickup Time: </label>
+            <input type="time" id="date" />
+
+            <button class="btn p-2 btn-danger">Book Service</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal design for terms of use and policy -->
+    <div
+      class="modal"
+      id="terms_and_policy"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src=".//IMAGES/terms_and_privacy.webp" alt="terms and privacy" />
+        </div>
+      </div>
+    </div>
+
+    <!-- modal design for service part -->
+    <div
+      class="modal"
+      id="travel"
+      tabindex="-1"
+      aria-labelledby="travel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form method="post" name="rent" onsubmit="return rent_validation();">
+            <div class="modal-header">
+              <h3>Travel with BlueSky-Hire</h3>
+              <span
+                class="fa-solid fa-xmark"
+                data-bs-dismiss="modal"
+                style="color: #f2f2f2; font-size: 30px; cursor: pointer"
+              ></span>
+            </div>
+
+            <label for="name" class="pt-3">Enter Name: </label>
+            <input
+              type="text"
+              id="name"
+              name="f_name"
+              placeholder="Enter name"
+            />
+
+            <label for="pickup" class="pt-3">Enter Contact Number: </label>
+            <input
+              type="text"
+              id="pickup"
+              placeholder="Enter your mobile number"
+            />
+
+            <label for="pickup" class="pt-3">Enter E-mail: </label>
+            <input type="email" id="pickup" placeholder="Enter E-mail" />
+
+            <label for="drop" class="pt-3">Select Service Type: </label>
+            <select name="service" id="service">
+              <option value="">Select service</option>
+              <option value="engine">Shuttle</option>
+              <option value="oil">Intercity Shuttle</option>
+              <option value="break">Transportation</option>
+            </select>
+
+            <label for="pick-location" class="pt-3"
+              >Enter Boarding location:
+            </label>
+            <input
+              type="input"
+              id="boarding"
+              name="boarding"
+              placeholder="Boarding Location "
+            />
+
+            <label for="final-location" class="pt-3"
+              >Enter Destination location:
+            </label>
+            <input
+              type="input"
+              id="destination"
+              name="destination"
+              placeholder="Destination Location"
+            />
+
+            <button class="btn p-2 btn-danger">Book Service</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script for header animation -->
+    <script type="text/javascript">
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 250) {
+          $(".header").addClass("active");
+        } else {
+          $(".header").removeClass("active");
+        }
+      });
+    </script>
+
+    <!-- use of script on other part -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var positionTop = $(document).scrollTop();
+          console.log(positionTop);
+
+          if (positionTop > 400 && positionTop < 500) {
+            $("#animate1").addClass("animate__animated animate__slideInLeft");
+          }
+          if (positionTop > 1800 && positionTop < 2000) {
+            $("#animate2").addClass("animate__animated animate__slideInLeft");
+          }
+          if (positionTop > 1800 && positionTop < 2000) {
+            $("#animate3").addClass("animate__animated animate__slideInRight");
+          }
+          if (positionTop > 2777 && positionTop < 3000) {
+            $("#animate4").addClass("animate__animated animate__backInLeft");
+          }
+          if (positionTop > 2777 && positionTop < 3000) {
+            $("#animate5").addClass("animate__animated animate__backInDown");
+          }
+          if (positionTop > 2777 && positionTop < 3000) {
+            $("#animate6").addClass("animate__animated animate__backInRight");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

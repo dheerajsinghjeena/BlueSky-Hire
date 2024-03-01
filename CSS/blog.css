@@ -1,0 +1,326 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #242124 !important;
+}
+
+/* media query for footer */
+@media only screen and (max-width: 991px) {
+  .f2 p,
+  .f3 p {
+    padding-left: 0px !important;
+  }
+
+  .blog2,
+  .blog4,
+  .blog5 {
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+  }
+}
+
+/* ANIMATION PART FOR HEADER */
+.header.active {
+  background-color: black;
+  transition: background-color 0.5s ease-in;
+  box-shadow: 0px 2px 10px black;
+}
+
+/* HEADER SECTION PART */
+header {
+  width: 100%;
+}
+
+nav.header {
+  position: fixed;
+  z-index: 1;
+  /* background-color: black; */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 25px !important;
+  font-family: lora, sans-serif;
+  color: white !important;
+  /* background: red; */
+}
+
+.nav-option ul li a {
+  color: white;
+  margin-left: 30px;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activey {
+  color: red !important;
+}
+
+.nav-option ul li a:hover {
+  color: red !important;
+}
+
+/* BODY PART START  */
+.reservation {
+  /* border: 1px solid red; */
+  height: 600px;
+  background-image: linear-gradient(
+      to top,
+      rgba(14, 13, 13, 0.151),
+      rgba(43, 41, 41, 0.658),
+      rgba(14, 13, 13, 0.98)
+    ),
+    url(../IMAGES/car_blog.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-navi {
+  position: relative;
+  top: 500px;
+}
+
+/* BLOG DETAIL */
+.blog {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+div.blog1 {
+  background-image: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.575),
+      rgba(22, 22, 22, 0.678),
+      rgba(7, 7, 7, 0.3)
+    ),
+    url(../IMAGES/blog-ev.jpg);
+  height: 300px;
+  background-size: cover;
+  box-shadow: 0 6px 10px black;
+}
+
+div.blog1 p {
+  position: relative;
+  top: 180px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+div.blog1 a {
+  position: relative;
+  top: 180px;
+}
+
+div.blog2 {
+  background-image: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.575),
+      rgba(22, 22, 22, 0.678),
+      rgba(7, 7, 7, 0.3)
+    ),
+    url(../IMAGES/blog-ad.jpg);
+  height: 300px;
+  background-size: cover;
+  margin-left: 20px;
+  box-shadow: 0 6px 10px black;
+}
+
+div.blog2 p {
+  position: relative;
+  top: 180px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+div.blog2 a {
+  position: relative;
+  top: 180px;
+}
+
+div.blog3 {
+  background-image: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.575),
+      rgba(22, 22, 22, 0.678),
+      rgba(7, 7, 7, 0.3)
+    ),
+    url(../IMAGES/blog-family.avif);
+  height: 300px;
+  background-size: cover;
+  box-shadow: 0 6px 10px black;
+}
+
+div.blog3 p {
+  position: relative;
+  top: 140px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+div.blog3 a {
+  position: relative;
+  top: 140px;
+}
+
+div.blog4 {
+  background-image: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.575),
+      rgba(22, 22, 22, 0.678),
+      rgba(7, 7, 7, 0.3)
+    ),
+    url(../IMAGES/blog-Insurance.jpg);
+  height: 300px;
+  background-size: cover;
+  margin-left: 20px;
+  box-shadow: 0 6px 10px black;
+}
+
+div.blog4 p {
+  position: relative;
+  top: 140px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+div.blog4 a {
+  position: relative;
+  top: 140px;
+}
+
+div.blog5 {
+  background-image: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.575),
+      rgba(22, 22, 22, 0.678),
+      rgba(7, 7, 7, 0.3)
+    ),
+    url(../IMAGES/blog-future.jpeg);
+  height: 300px;
+  background-size: cover;
+  margin-left: 20px;
+  box-shadow: 0 6px 10px black;
+}
+
+div.blog5 p {
+  position: relative;
+  top: 140px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+div.blog5 a {
+  position: relative;
+  top: 140px;
+}
+.blog1:hover,
+.blog2:hover,
+.blog3:hover,
+.blog4:hover,
+.blog5:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER SECTION */
+.footer {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-color: #343541;
+}
+
+.f1 h4 {
+  color: white;
+  font-size: 25px;
+  font-family: lora, sans-serif;
+  font-style: italic;
+  line-height: 3;
+}
+
+.f1 p {
+  color: white;
+  font-style: oblique;
+  font-family: serif;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.f1 p a i {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #3b3837;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.f1 p a {
+  text-decoration: none;
+}
+
+.f1 p a i:hover {
+  background-color: rgba(255, 0, 0, 0.555);
+}
+
+.f2 h6 {
+  text-transform: uppercase;
+  color: red;
+  text-align: center;
+}
+
+.f2 p {
+  color: white;
+  margin-top: 20px;
+  line-height: 2;
+  padding-left: 80px;
+}
+
+.f3 h6 {
+  text-transform: uppercase;
+  color: red;
+  text-align: center;
+}
+
+.f3 p {
+  color: white;
+  margin-top: 20px;
+  line-height: 2;
+  padding-left: 80px;
+}
+.f3 input {
+  width: 70%;
+  height: 43px;
+  border-radius: 2px;
+  background: #393d4a;
+  border: none;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #707079;
+  margin-left: 40px;
+}
+
+.f3 button {
+  background-color: rgba(255, 0, 0, 0.507);
+}
+
+/* DECLARATION OF WEBSITE */
+.footer-declare {
+  background-color: #242124;
+}
+
+.declare-text p {
+  font-size: 20px;
+  color: white;
+}
