@@ -597,7 +597,8 @@
     <!-- use of script on other part -->
     <script type="text/javascript">
       $(document).ready(function () {
-        $(window).scroll(function () {
+        if ($(window).width() >= 768) {
+          $(window).scroll(function () {
           var positionTop = $(document).scrollTop();
           console.log(positionTop);
 
@@ -620,6 +621,7 @@
           //   $("#animate6").addClass("animate__animated animate__zoomIn");
           // }
         });
+        }
       });
     </script>
   </body>

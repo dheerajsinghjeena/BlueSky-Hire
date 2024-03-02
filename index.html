@@ -215,7 +215,7 @@
 
           <!-- guide to book -->
           <div class="col-lg-8 guide">
-            <h2 class="text-capitalize text-white">
+            <h2 class="text-capitalize text-white" id="underline1">
               best way to rent a car on your finger tips
             </h2>
             <!-- guide details -->
@@ -1214,10 +1214,14 @@
     <!-- use of script on other part -->
     <script type="text/javascript">
       $(document).ready(function () {
+        // if ($(window).width() >= 768) {
         $(window).scroll(function () {
           var positionTop = $(document).scrollTop();
           console.log(positionTop);
 
+          if (positionTop > 230 && positionTop < 240) {
+            $("#underline1").css("border-bottom", "4px solid red" );
+          }
           if (positionTop > 400 && positionTop < 500) {
             $("#animate1").addClass("animate__animated animate__slideInLeft");
           }
@@ -1237,6 +1241,7 @@
             $("#animate6").addClass("animate__animated animate__backInRight");
           }
         });
+        // }
       });
     </script>
   </body>
