@@ -215,7 +215,7 @@
 
           <!-- guide to book -->
           <div class="col-lg-8 guide">
-            <h2 class="text-capitalize text-white" id="underline1">
+            <h2 class="text-capitalize text-white section_heading">
               best way to rent a car on your finger tips
             </h2>
             <!-- guide details -->
@@ -325,7 +325,7 @@
     <section class="featured">
       <div class="container">
         <h4
-          class="text-uppercase text-center text-danger"
+          class="text-uppercase text-center text-danger section_heading_2"
           style="font-size: 15px"
         >
           What we offer
@@ -586,7 +586,7 @@
       <div class="container">
         <div class="container">
           <h4
-            class="text-uppercase text-center text-danger"
+            class="text-uppercase text-center text-danger section_heading_3"
             style="font-size: 15px"
           >
             Our Services
@@ -636,7 +636,7 @@
             </div>
 
             <!-- second service -->
-            <div class="col-md-4 mt-3">
+            <div class="col-md-4 mt-3" id="animate22">
               <div class="card text-center">
                 <div
                   class="card-header justify-content-center align-content-center"
@@ -722,7 +722,7 @@
     <section class="review">
       <div class="container">
         <h4
-          class="text-uppercase text-center text-danger"
+          class="text-uppercase text-center text-danger section_heading_4"
           style="font-size: 15px"
         >
           testimonials
@@ -830,10 +830,10 @@
     <section class="blogging">
       <div class="container blogging-detail">
         <h4
-          class="text-uppercase text-center text-danger"
+          class="text-uppercase text-center text-danger section_heading_5"
           style="font-size: 15px"
         >
-          Blog
+          Blog's
         </h4>
         <h2 class="text-uppercase text-center text-white">our recent blogs</h2>
         <div class="row">
@@ -1214,35 +1214,150 @@
     <!-- use of script on other part -->
     <script type="text/javascript">
       $(document).ready(function () {
-        // if ($(window).width() >= 768) {
-        $(window).scroll(function () {
-          var positionTop = $(document).scrollTop();
-          console.log(positionTop);
+        if ($(window).width() >= 768) {
+          $(window).scroll(function () {
+            var positionTop = $(document).scrollTop();
+            console.log(positionTop);
 
-          if (positionTop > 230 && positionTop < 240) {
-            $("#underline1").css("border-bottom", "4px solid red" );
-          }
-          if (positionTop > 400 && positionTop < 500) {
-            $("#animate1").addClass("animate__animated animate__slideInLeft");
-          }
-          if (positionTop > 1800 && positionTop < 2000) {
-            $("#animate2").addClass("animate__animated animate__slideInLeft");
-          }
-          if (positionTop > 1800 && positionTop < 2000) {
-            $("#animate3").addClass("animate__animated animate__slideInRight");
-          }
-          if (positionTop > 2777 && positionTop < 3000) {
-            $("#animate4").addClass("animate__animated animate__backInLeft");
-          }
-          if (positionTop > 2777 && positionTop < 3000) {
-            $("#animate5").addClass("animate__animated animate__backInDown");
-          }
-          if (positionTop > 2777 && positionTop < 3000) {
-            $("#animate6").addClass("animate__animated animate__backInRight");
-          }
-        });
+            if (positionTop > 400 && positionTop < 500) {
+              $("#animate1").addClass("animate__animated animate__slideInLeft");
+            }
+            if (positionTop > 1687 && positionTop < 1750) {
+              $("#animate2").addClass("animate__animated animate__slideInUp");
+            }
+            if (positionTop > 1687 && positionTop < 1750) {
+              $("#animate22").addClass("animate__animated animate__slideInUp");
+            }
+            if (positionTop > 1687 && positionTop < 1750) {
+              $("#animate3").addClass("animate__animated animate__slideInUp");
+            }
+            if (positionTop > 2680 && positionTop < 3000) {
+              $("#animate4").addClass("animate__animated animate__slideInUp");
+            }
+            if (positionTop > 2680 && positionTop < 3000) {
+              $("#animate5").addClass("animate__animated animate__backInDown");
+            }
+            if (positionTop > 2680 && positionTop < 3000) {
+              $("#animate6").addClass("animate__animated animate__backInRight");
+            }
+          });
+        }
+      });
+    </script>
+
+    <!-- for heading part -->
+    <script>
+      const sectionHeading = document.querySelector(".section_heading");
+
+      document.addEventListener("scroll", function () {
+        if (isInView(sectionHeading)) {
+          sectionHeading.classList.add("section_heading--active");
+        }
+        // else {
+        //   sectionHeading.classList.remove("section_heading--active");
         // }
       });
+      function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.bottom > 0 &&
+          rect.top <
+            (window.innerHeight - 50 ||
+              document.documentElement.clientHeight - 50)
+        );
+      }
+    </script>
+
+    <!-- for heading part second -->
+    <script>
+      const sectionHeading2 = document.querySelector(".section_heading_2");
+
+      document.addEventListener("scroll", function () {
+        if (isInView(sectionHeading2)) {
+          sectionHeading2.classList.add("section_heading_2--active");
+        }
+        // else {
+        //   sectionHeading2.classList.remove("section_heading_2--active");
+        // }
+      });
+      function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.bottom > 0 &&
+          rect.top <
+            (window.innerHeight - 50 ||
+              document.documentElement.clientHeight - 50)
+        );
+      }
+    </script>
+
+    <!-- for heading part third -->
+    <script>
+      const sectionHeading3 = document.querySelector(".section_heading_3");
+
+      document.addEventListener("scroll", function () {
+        if (isInView(sectionHeading3)) {
+          sectionHeading3.classList.add("section_heading_3--active");
+        }
+        // else {
+        //   sectionHeading3.classList.remove("section_heading_3--active");
+        // }
+      });
+      function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.bottom > 0 &&
+          rect.top <
+            (window.innerHeight - 50 ||
+              document.documentElement.clientHeight - 50)
+        );
+      }
+    </script>
+
+    <!-- for heading part fourth -->
+    <script>
+      const sectionHeading4 = document.querySelector(".section_heading_4");
+
+      document.addEventListener("scroll", function () {
+        if (isInView(sectionHeading4)) {
+          sectionHeading4.classList.add("section_heading_4--active");
+        }
+        // else {
+        //   sectionHeading4.classList.remove("section_heading_4--active");
+        // }
+      });
+      function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.bottom > 0 &&
+          rect.top <
+            (window.innerHeight - 50 ||
+              document.documentElement.clientHeight - 50)
+        );
+      }
+    </script>
+
+    <!-- for heading part fifth -->
+    <script>
+      const sectionHeading5 = document.querySelector(".section_heading_5");
+
+      document.addEventListener("scroll", function () {
+        if (isInView(sectionHeading5)) {
+          sectionHeading5.classList.add("section_heading_5--active");
+        }
+        // else {
+        //   sectionHeading5.classList.remove("section_heading_5--active");
+        // }
+      });
+      function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.bottom > 0 &&
+          rect.top <
+            (window.innerHeight - 50 ||
+              document.documentElement.clientHeight - 50)
+        );
+      }
     </script>
   </body>
 </html>

@@ -163,6 +163,27 @@ form button {
 }
 
 /* GUIDE SECTION */
+/* this part is for heading animate */
+.section_heading {
+  position: relative;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.section_heading::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: red;
+  transition: 0.3s width;
+}
+
+.section_heading--active::before {
+  width: 100%;
+}
+
 .guide {
   padding: 40px !important;
 }
@@ -196,6 +217,27 @@ form button {
   padding-bottom: 50px;
 }
 /* FEATURED */
+/* this part is for heading animate */
+.section_heading_2 {
+  position: relative;
+  margin-bottom: 1rem;
+  display: inline-block;
+  left: 45%;
+}
+
+.section_heading_2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s width;
+}
+
+.section_heading_2--active::before {
+  width: 100%;
+}
 
 .featured {
   padding-top: 50px;
@@ -214,6 +256,28 @@ form button {
 }
 
 /* SERVICE SECTION */
+/* this part is for heading animate */
+.section_heading_3 {
+  position: relative;
+  margin-bottom: 1rem;
+  display: inline-block;
+  left: 45%;
+}
+
+.section_heading_3::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s width;
+}
+
+.section_heading_3--active::before {
+  width: 100%;
+}
+
 .service {
   padding-top: 30px;
   padding-bottom: 50px;
@@ -221,6 +285,28 @@ form button {
 }
 
 /* REVIEW SECTION */
+/* this part is for heading animate */
+.section_heading_4 {
+  position: relative;
+  margin-bottom: 1rem;
+  display: inline-block;
+  left: 45%;
+}
+
+.section_heading_4::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s width;
+}
+
+.section_heading_4--active::before {
+  width: 100%;
+}
+
 .review {
   padding-top: 30px;
   padding-bottom: 50px;
@@ -231,6 +317,27 @@ form button {
 }
 
 /* BLOG SECTION*/
+/* this part is for heading animate */
+.section_heading_5 {
+  position: relative;
+  margin-bottom: 1rem;
+  display: inline-block;
+  left: 48%;
+}
+
+.section_heading_5::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s width;
+}
+
+.section_heading_5--active::before {
+  width: 100%;
+}
 
 .blogging {
   padding-top: 30px;
