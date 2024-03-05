@@ -215,7 +215,10 @@
 
           <!-- guide to book -->
           <div class="col-lg-8 guide">
-            <h2 class="text-capitalize text-white section_heading">
+            <h2
+              class="text-capitalize text-white section_heading"
+              id="fade-in1"
+            >
               best way to rent a car on your finger tips
             </h2>
             <!-- guide details -->
@@ -1219,16 +1222,19 @@
             var positionTop = $(document).scrollTop();
             console.log(positionTop);
 
-            if (positionTop > 400 && positionTop < 500) {
+            if (positionTop > 200 && positionTop < 500) {
               $("#animate1").addClass("animate__animated animate__slideInLeft");
             }
-            if (positionTop > 1687 && positionTop < 1750) {
+            if (positionTop > 100 && positionTop < 500) {
+              $("#fade-in1").addClass("animate__animated animate__slideInDown");
+            }
+            if (positionTop > 1600 && positionTop < 1750) {
               $("#animate2").addClass("animate__animated animate__slideInUp");
             }
-            if (positionTop > 1687 && positionTop < 1750) {
+            if (positionTop > 1600 && positionTop < 1750) {
               $("#animate22").addClass("animate__animated animate__slideInUp");
             }
-            if (positionTop > 1687 && positionTop < 1750) {
+            if (positionTop > 1600 && positionTop < 1750) {
               $("#animate3").addClass("animate__animated animate__slideInUp");
             }
             if (positionTop > 2680 && positionTop < 3000) {

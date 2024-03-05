@@ -499,28 +499,28 @@
       $(document).ready(function () {
         if ($(window).width() >= 768) {
           $(window).scroll(function () {
-          var positionTop = $(document).scrollTop();
-          console.log(positionTop);
+            var positionTop = $(document).scrollTop();
+            console.log(positionTop);
 
-          if (positionTop > 550 && positionTop < 800) {
-            $("#animate1").addClass("animate__animated animate__slideInLeft");
-          }
-          if (positionTop > 550 && positionTop < 800) {
-            $("#animate2").addClass("animate__animated animate__slideInRight");
-          }
-          if (positionTop > 1666 && positionTop < 1820) {
-            $("#animate3").addClass("animate__animated animate__slideInLeft");
-          }
-          if (positionTop > 2000 && positionTop < 2300) {
-            $("#animate4").addClass("animate__animated animate__slideInLeft");
-          }
-          if (positionTop > 2350 && positionTop < 2600) {
-            $("#animate5").addClass("animate__animated animate__slideInLeft");
-          }
-          if (positionTop > 2900 && positionTop < 3000) {
-            $("#animate6").addClass("animate__animated animate__zoomIn");
-          }
-        });
+            if (positionTop > 250 && positionTop < 800) {
+              $("#animate1").addClass("animate__animated animate__backInLeft");
+            }
+            if (positionTop > 156 && positionTop < 800) {
+              $("#animate2").addClass("animate__animated animate__zoomIn");
+            }
+            if (positionTop > 1389 && positionTop < 1653) {
+              $("#animate3").addClass("animate__animated animate__backInLeft");
+            }
+            if (positionTop > 1745 && positionTop < 2034) {
+              $("#animate4").addClass("animate__animated animate__backInLeft");
+            }
+            if (positionTop > 2202 && positionTop < 2400) {
+              $("#animate5").addClass("animate__animated animate__backInLeft");
+            }
+            if (positionTop > 2665 && positionTop < 3000) {
+              $("#animate6").addClass("animate__animated animate__zoomIn");
+            }
+          });
         }
       });
     </script>
